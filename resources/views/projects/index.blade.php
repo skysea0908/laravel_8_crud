@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+@section('title','專案頁面')
+
 @section('content')
     <div class="row">
         <div class="col-lg-12 margin-tb">
@@ -21,13 +23,13 @@
 
     <table class="table table-bordered table-responsive-lg">
         <tr>
-            <th>No</th>
-            <th>Name</th>
-            <th>Introduction</th>
-            <th>Location</th>
-            <th>Cost</th>
-            <th>Date Created</th>
-            <th width="280px">Action</th>
+            <th>編號</th>
+            <th>姓名</th>
+            <th>說明</th>
+            <th>產地</th>
+            <th>花費</th>
+            <th>資料製作</th>
+            <th width="280px">動作</th>
         </tr>
         @foreach ($projects as $project)
             <tr>
